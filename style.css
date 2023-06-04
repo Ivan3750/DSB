@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+   /*  background-color: #B51730; */
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    height: 50px;
+    background-color: #fff;
+}
+.list {
+}
+.logo {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.element {
+}
+
+.section {
+    background-color: #B51730;
+    border: 1px solid #000;
+    
+}
+.ins {
+    margin: 150px auto; 
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+.i1, .i2 , .i3{
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #ff4949;
+    z-index: 0;
+} 
+.i1{
+    right: 5px;
+    top: 5px;
+    opacity: 1;
+    position: absolute;
+    animation: i1 2s linear;
+    
+}
+ .i2{
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+     position: absolute;
+     animation: i2 3s linear;
+}
+.i3{
+    right: 15px;
+    top: 15px;
+    opacity: 1;
+    position: absolute;
+    animation: i3 5s linear;
+    
+
+}
+
+  
+@keyframes i1{
+    0%{
+        opacity: 0;
+        z-index: 1;
+        transform:rotate(-45deg) translateY(-650px);
+    }
+    50%{
+        transform: translate(0px);
+        z-index: 1;
+        opacity: 1;
+
+    }
+    100%{
+       
+
+    }
+}
+ @keyframes i2{
+    0%{
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0;
+        transform:rotate(-45deg) translateY(-650px);
+    }
+    100%{
+        transform: translateY(0px);
+        z-index: 2;
+        opacity: 1;
+    }
+}
+@keyframes i3{
+    0%{
+        opacity: 0;
+        
+    }
+    75%{
+        opacity: 0;
+        transform:rotate(-45deg) translateY(-650px);
+    }
+    100%{
+        transform: translateY(0px);
+        z-index: 2;
+        opacity: 1;
+    }
+} 
+
+
+
+.ins img{
+    width: 500px;
+    height: 350px;
+}
+
+.bookmark {
+    position: relative;
+    left: -400px;
+    bottom: 500px;
+    width: 450px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    transition: 0.5s;
+}
+
+.DSB{
+    position: absolute;
+    right: 2px;
+    top: 15px;
+}
+.bookmark:hover{
+    left: -10px;
+}
+button{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 75px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #B51730;
+    color: #fff;
+    box-shadow: 2px 2px 20px #B51730;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+P{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Monomaniac One', sans-serif;
+    color: #B51730;
+}
